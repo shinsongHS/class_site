@@ -1,0 +1,18 @@
+.upheader{
+  color: gray;
+  font-size: small;
+}
+.container{
+  width: 300vw;
+  transition: transform 0.5s;
+}
+.inner{
+  width: 40vw;
+  float: left;
+
+  margin-right:500px;
+  margin-left:550px;
+}
+.inner img{
+  width:100%;
+}
