@@ -16,3 +16,7 @@
 .inner img{
   width:100%;
 }
+.img_responsive{
+  width: 100%;      //주목
+  height: auto;
+}
