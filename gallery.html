@@ -2,7 +2,7 @@
 <html lang="ko" dir="ltr">
   <head>
     <link rel="stylesheet" href="update_info.css" />
-    <title>업데이트 정보</title>
+    <title>갤러리</title>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="update_info .css" />
@@ -45,27 +45,61 @@
 			</div>
   </head>
   <body>
-    <br>
-    <br>
-    <br>
 
-    <div style="margin-left:100px;">
-    <h1>최근 변경사항</h1>
-    <hr width="90%" align="left">
-    <p>• (2022-09-18) v1.5.1 배포 오류 수정</p>
-    <p>• (2022-09-18) v1.5.0 갤러리 페이지 템플릿 대략 완성</p>
-    <p>• (2022-09-16) v1.4.0 업데이트 정보 페이지 완성</p>
-    <p>• (2022-09-10) v1.3.1 이미지 렌더링 수정</p>
-    <p>• (2022-09-10) v1.3.0 content_intro 완성, 이미지와 글꼴 변경할 예정</p>
-    <p>• (2022-09-08) v1.2.0 기존의 테스트 이미지 삭제, 학교 로고, 봄 단체 사진 3장 업로드 및 단체 사진을 슬라이더에 적용</p>
-    <p>• (2022-09-08) v1.1.2 배포 오류 수정</p>
-    <p>• (2022-09-08) v1.1.1 배포 오류 수정</p>
-    <p>• (2022-09-08) v1.1.0 푸터 제작, 슬라이더(버전2) 제작, content_intro 시작</p>
-    <p>• (2022-09-02) v1.0.3 모바일 반응형 웹 시도2</p>
-    <p>• (2022-09-02) v1.0.2 모바일 반응형 웹 시도1</p>
-    <p>• (2022-09-02) v1.0.1</p>
-    <p>• (2022-09-02) v1.0.0 헤더, 슬라이더(버전1) 등 전체적인 틀 제작</p>
+<br>
+<div style="margin-left:100px;">
+<h1>갤러리</h1>
+<hr width="90%" align="left">
+</div>
+<br><br>
+    <style>
+
+      div.gal{
+        margin: 5px;
+        border: 1px solid #ccc;
+        width: 200px;
+        float: left;
+      }
+
+      div.gal img{
+        width: 200px;
+        height: auto;
+      }
+
+      div.text{
+        text-align: center;
+        padding: 5px;
+      }
+
+      div.gal:hover{
+        opacity: 0.5;
+      }
+
+    </style>
+
+    <div style="display: flex; justify-content:center;">
+    <div class="gal">
+      <a target="_blank">
+        <img src="sakura2_KakaoTalk_20220516_103525943_01.jpg" >
+      </a>
+      <div class="text">단체사진</div>
     </div>
+
+    <div class="gal" onclick="location.href='gal_soccer.html'">
+      <a target="_blank">
+        <img src="soccer_LHS.jpg">
+      </a>
+      <div class="text">축구 대회</div>
+    </div>
+
+    <div class="gal">
+      <a target="_blank">
+        <img src="sakura3_KakaoTalk_20220516_103525943_03.jpg">
+      </a>
+      <div class="text">단체사진</div>
+    </div>
+</div>
+
 
     <footer>
         <nav>

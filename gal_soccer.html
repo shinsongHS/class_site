@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-    <link rel="stylesheet" href="update_info.css" />
+    <link rel="stylesheet" href="gal_soccer.css" />
     <title>업데이트 정보</title>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,27 +45,35 @@
 			</div>
   </head>
   <body>
-    <br>
-    <br>
-    <br>
 
-    <div style="margin-left:100px;">
-    <h1>최근 변경사항</h1>
-    <hr width="90%" align="left">
-    <p>• (2022-09-18) v1.5.1 배포 오류 수정</p>
-    <p>• (2022-09-18) v1.5.0 갤러리 페이지 템플릿 대략 완성</p>
-    <p>• (2022-09-16) v1.4.0 업데이트 정보 페이지 완성</p>
-    <p>• (2022-09-10) v1.3.1 이미지 렌더링 수정</p>
-    <p>• (2022-09-10) v1.3.0 content_intro 완성, 이미지와 글꼴 변경할 예정</p>
-    <p>• (2022-09-08) v1.2.0 기존의 테스트 이미지 삭제, 학교 로고, 봄 단체 사진 3장 업로드 및 단체 사진을 슬라이더에 적용</p>
-    <p>• (2022-09-08) v1.1.2 배포 오류 수정</p>
-    <p>• (2022-09-08) v1.1.1 배포 오류 수정</p>
-    <p>• (2022-09-08) v1.1.0 푸터 제작, 슬라이더(버전2) 제작, content_intro 시작</p>
-    <p>• (2022-09-02) v1.0.3 모바일 반응형 웹 시도2</p>
-    <p>• (2022-09-02) v1.0.2 모바일 반응형 웹 시도1</p>
-    <p>• (2022-09-02) v1.0.1</p>
-    <p>• (2022-09-02) v1.0.0 헤더, 슬라이더(버전1) 등 전체적인 틀 제작</p>
+    <div id="container">
+    	<img src="soccer_LHS.jpg" alt="photo" id="photo" style="width:30%;">
     </div>
+
+    <ul id="gallery">
+    	<li><img src="soccer_LHS.jpg" alt="thumbnail"></li>
+    	<li><img src="soccer_KTH.jpg" alt="thumbnail"></li>
+    	<li><img src="soccer_YCM.jpg" alt="thumbnail"></li>
+    </ul>
+
+
+
+
+        <script>
+
+          var photo = document.getElementById("photo");
+          var thumbnail = document.querySelectorAll("#gallery > li > img");
+
+          for ( var i = 0; i < thumbnail.length; i++ )
+            thumbnail[i].addEventListener("click", function () {
+
+              photo.setAttribute("src", this.getAttribute("src"));
+
+            });
+
+        </script>
+
+
 
     <footer>
         <nav>

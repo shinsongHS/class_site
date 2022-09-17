@@ -1,0 +1,65 @@
+#container{margin-bottom: 80px;}
+#photo{
+  display: block;
+  width: 960px;
+  border: 10px solid black;
+  margin: 0 auto;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+#gallery{text-align: center;}
+
+#gallery > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#gallery > li > img{
+  display: block;
+  width: 200px;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+
+
+
+
+
+img {
+   image-rendering: -webkit-optimize-contrast;
+   transform: translateZ(0);
+   backface-visibility: hidden;
+ }
+.upheader{
+  color: gray;
+  font-size: small;
+}
+a {
+   text-decoration:none;
+ }
+ a:visited {text-decoration: none; color: black;}
+
+#wrap {
+  height: auto;
+min-height: 100%;
+padding-bottom: 150px;
+}
+footer {
+	width: 100%;
+	bottom: 0px;
+  background-color: #23272a;
+  color : white;
+  clear: left;
+  height: 170px;
+  position : relative;
+  transform : translateY(180%);
+}
+html, body {
+      margin: 0;
+      padding: 0;
+      height: 50%;   /*교체*/
+}
+section {
+  min-height: 100%;
+    position: relative;
+}
