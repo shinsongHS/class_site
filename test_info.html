@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-    <link rel="stylesheet" href="gal_soccer.css" />
-    <title>업데이트 정보</title>
+    <link rel="stylesheet" href="test_info.css" />
+    <title>시험 정보</title>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="update_info .css" />
@@ -45,35 +45,28 @@
 			</div>
   </head>
   <body>
-<br>
-    <div id="container">
-    	<img src="soccer_bfull1.jpg" alt="photo" id="photo" style="height:450px; width:auto;">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+.a1{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+</style>
+
+<br><br><br><br><br><br><br><br><br>
+
+<center>
+    <div class="school">
+      <button class="a1" onclick="location.href='school_test.html'">내신 시험</button>
     </div>
-    <ul id="gallery">
-      <li><img src="soccer_bfull1.jpg" alt="thumbnail"></li>
-      <li><img src="soccer_bfull2.jpg" alt="thumbnail"></li>
-    	<li><img src="soccer_LHS.jpg" alt="thumbnail"></li>
-    	<li><img src="soccer_KTH.jpg" alt="thumbnail"></li>
-    	<li><img src="soccer_YCM.jpg" alt="thumbnail"></li>
-    </ul>
+<br><br><br><br><br><br>
+    <div class="fake">
+      <button class="a1" onclick="location.href='fake_test.html'">모의고사 & 수능</button>
+    </div>
+</center>
 
-
-
-
-        <script>
-
-          var photo = document.getElementById("photo");
-          var thumbnail = document.querySelectorAll("#gallery > li > img");
-
-          for ( var i = 0; i < thumbnail.length; i++ )
-            thumbnail[i].addEventListener("click", function () {
-
-              photo.setAttribute("src", this.getAttribute("src"));
-
-            });
-
-        </script>
-
+<!--<a href="2023학년도 6월 모의평가- 국어 문제.pdf" download="2023학년도 6월 모의평가- 국어 문제.pdf" target="_blank">2023학년도 6월 모의평가 국어</a>-->
 
 
     <footer>
@@ -103,7 +96,7 @@
         <p style="font-size:15px;">
             <span>제작자 : 이정윤</span><br/>
             <span>이메일 : ijeongyun70@gmail.com</span><br/>
-            <span>version 1.5.0</span><br/>
+            <span>version 1.4.0</span><br/>
     				<span>Copyright 2022. 이정윤. All Rights Reserved.</span>
         </p>
     </footer>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-    <link rel="stylesheet" href="gal_soccer.css" />
-    <title>업데이트 정보</title>
+    <link rel="stylesheet" href="school_test.css" />
+    <title>내신 시험</title>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="update_info .css" />
@@ -45,36 +45,72 @@
 			</div>
   </head>
   <body>
-<br>
-    <div id="container">
-    	<img src="soccer_bfull1.jpg" alt="photo" id="photo" style="height:450px; width:auto;">
+
+<br><br>
+    <div style="margin-left:100px;" class="wrapper flow">
+    <h1>등급컷</h1>
+    <hr width="90%" align="left">
+
+
+
+    <table class="member" border="1">
+      <br>
+        <tr>
+            <th>과목</th>
+            <th>1등급</th>
+            <th>2등급</th>
+            <th>3등급</th>
+            <th>4등급</th>
+        </tr>
+        <tr>
+            <td>국어</td>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>한국사</td>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>100</td>
+            <td>90</td>
+            <td>80</td>
+            <td></td>
+        </tr>
+    </table>
+
     </div>
-    <ul id="gallery">
-      <li><img src="soccer_bfull1.jpg" alt="thumbnail"></li>
-      <li><img src="soccer_bfull2.jpg" alt="thumbnail"></li>
-    	<li><img src="soccer_LHS.jpg" alt="thumbnail"></li>
-    	<li><img src="soccer_KTH.jpg" alt="thumbnail"></li>
-    	<li><img src="soccer_YCM.jpg" alt="thumbnail"></li>
-    </ul>
 
 
 
-
-        <script>
-
-          var photo = document.getElementById("photo");
-          var thumbnail = document.querySelectorAll("#gallery > li > img");
-
-          for ( var i = 0; i < thumbnail.length; i++ )
-            thumbnail[i].addEventListener("click", function () {
-
-              photo.setAttribute("src", this.getAttribute("src"));
-
-            });
-
-        </script>
-
-
+  </body>
 
     <footer>
         <nav>
@@ -103,9 +139,8 @@
         <p style="font-size:15px;">
             <span>제작자 : 이정윤</span><br/>
             <span>이메일 : ijeongyun70@gmail.com</span><br/>
-            <span>version 1.5.0</span><br/>
+            <span>version 1.4.0</span><br/>
     				<span>Copyright 2022. 이정윤. All Rights Reserved.</span>
         </p>
     </footer>
-  </body>
 </html>
