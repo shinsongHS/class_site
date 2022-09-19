@@ -1,0 +1,46 @@
+img {
+   image-rendering: -webkit-optimize-contrast;
+   transform: translateZ(0);
+   backface-visibility: hidden;
+ }
+.upheader{
+  color: gray;
+  font-size: small;
+}
+a {
+   text-decoration:none;
+ }
+ a:visited {text-decoration: none; color: black;}
+
+@media(max-width:800px){
+  .header{
+    display:none;
+    transition: transform 0.5s;
+  }
+}
+
+
+#wrap {
+  height: auto;
+min-height: 100%;
+padding-bottom: 150px;
+}
+footer {
+	width: 100%;
+	bottom: 0px;
+  background-color: #23272a;
+  color : white;
+  clear: left;
+  height: 170px;
+  position : relative;
+  transform : translateY(180%);
+}
+html, body {
+      margin: 0;
+      padding: 0;
+      height: 50%;   /*교체*/
+}
+section {
+  min-height: 100%;
+    position: relative;
+}
