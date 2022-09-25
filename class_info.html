@@ -5,7 +5,7 @@
     <title>업데이트 정보</title>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="update_info .css" />
+		<link rel="stylesheet" href="class_info.css" />
 			<div class="upheader" style="text-align:right;">
 				다크모드
 			</div>
@@ -22,7 +22,7 @@
 					<font face="비트로 코어 TTF">
 					<div class="header_nav">
 					<div style="float:left;">
-						<a style="font-size:180%" href="class_info.html">학급정보</a>
+						<a style="font-size:180%">학급정보</a>
 					</div>
 					<div style="margin-left:8%; float:left;">
 						<a style="font-size:180%" href="test_info.html">시험정보</a>
@@ -45,30 +45,49 @@
 			</div>
   </head>
   <body>
-    <br>
-    <br>
-    <br>
+<br><br>
 
-    <div style="margin-left:100px;">
-    <h1>최근 변경사항</h1>
-    <hr width="90%" align="left">
-    <p>• (2022-09-26) v1.8.0 학급정보 페이지 완성, 텍스트 수정</p>
-    <p>• (2022-09-19) v1.7.0 공지사항 게시판 완성, 일부 오탈자 수정</p>
-    <p>• (2022-09-18) v1.6.0 갤러리 페이지 템플릿 완성, 시험 정보 페이지 템플릿 거의 완성</p>
-    <p>• (2022-09-18) v1.5.1 배포 오류 수정</p>
-    <p>• (2022-09-18) v1.5.0 갤러리 페이지 템플릿 대략 완성</p>
-    <p>• (2022-09-16) v1.4.0 업데이트 정보 페이지 완성</p>
-    <p>• (2022-09-10) v1.3.1 이미지 렌더링 수정</p>
-    <p>• (2022-09-10) v1.3.0 content_intro 완성, 이미지와 글꼴 변경할 예정</p>
-    <p>• (2022-09-08) v1.2.0 기존의 테스트 이미지 삭제, 학교 로고, 봄 단체 사진 3장 업로드 및 단체 사진을 슬라이더에 적용</p>
-    <p>• (2022-09-08) v1.1.2 배포 오류 수정</p>
-    <p>• (2022-09-08) v1.1.1 배포 오류 수정</p>
-    <p>• (2022-09-08) v1.1.0 푸터 제작, 슬라이더(버전2) 제작, content_intro 시작</p>
-    <p>• (2022-09-02) v1.0.3 모바일 반응형 웹 시도2</p>
-    <p>• (2022-09-02) v1.0.2 모바일 반응형 웹 시도1</p>
-    <p>• (2022-09-02) v1.0.1</p>
-    <p>• (2022-09-02) v1.0.0 헤더, 슬라이더(버전1) 등 전체적인 틀 제작</p>
-    </div>
+<center>
+<div class="tab_content">
+  <input type="radio" name="tabmenu" id="tab01" checked>
+  <label for="tab01">학급 구성원</label>
+  <input type="radio" name="tabmenu" id="tab02">
+  <label for="tab02">시간표</label>
+  <input type="radio" name="tabmenu" id="tab03">
+  <label for="tab03">학급 특색</label>
+
+
+<hr width="70%" height="3px" align="center" style="height:2px; border:0; background: #000;">
+
+
+  <div class="conbox con1">
+    <p>담임선생님: 박유선 선생님</p>
+    <p>반장: 정현채</p>
+    <p>부반장: 임현성</p>
+  </div>
+  <div class="conbox con2">
+    <img src="timetable.png" style="height: 1000px;">
+  </div>
+  <div class="conbox con3">
+    <p>1인1역</p>
+    <img src="chall.jpg" style="height: 800px;">
+  </div>
+</div>
+</center>
+
+<style>
+  input[type="radio"] {display: none;}
+  input[type="radio"] + label{display: inline-block; padding: 20px; background: #ccc; color: #999; font-size: 14px; cursor: pointer;}
+  input[type="radio"]:checked + label{background: #aaa; color: #000;}
+
+  .conbox{width: 1200px; height: 1000px; background: #E6E6E6; margin: 0 auto; display: none;}
+  input[id="tab01"]:checked ~ .con1 {display: block;}
+  input[id="tab02"]:checked ~ .con2 {display: block;}
+  input[id="tab03"]:checked ~ .con3 {display: block;}
+</style>
+
+
+
 
     <footer>
     	<script>
@@ -108,5 +127,6 @@
         </p>
     	</div>
     </footer>
+
   </body>
 </html>

@@ -28,12 +28,53 @@ a {
   width:100%;
 }
 */
-@media(max-width:800px){
+@media(max-width:1330px){
   .header{
-    display:none;
+    /*display:none;*/
     transition: transform 0.5s;
   }
+  .header_nav{
+    font-size: 80%;
+  }
+  .header_logo{
+    width: 17%;
+  }
 }
+@media(max-width:1100px){
+  .header{
+    /*display:none;*/
+    transition: transform 0.5s;
+  }
+  .header_nav{
+    font-size: 70%;
+  }
+  .header_logo{
+    width: 20%;
+  }
+}
+@media(max-width:950px){
+  .header{
+    /*display:none;*/
+    transition: transform 0.5s;
+    position:relative;
+  }
+  .header_nav{
+    font-size: 60%;
+    clear:both;
+    /*height:240px;*/
+    /*position:relative;*/
+    text-align: center;
+  }
+  .header_logo{
+    display: none;
+    width: 20%;
+  }
+}
+
+.content_intro{
+  position: static;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
