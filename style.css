@@ -28,9 +28,108 @@ a {
   width:100%;
 }
 */
-@media(max-width:1330px){
+@media all and (max-width:15000px) {
+  .header_m{
+    display: none;
+  }
+  .not{
+    display: none;
+  }
+}
+@media all and (max-width:1500px) {
   .header{
     /*display:none;*/
+    transition: transform 0.5s;
+  }
+  .header_nav{
+    font-size: 80%;
+  }
+  .header_logo{
+    width: 15%;
+  }
+  .content_intro{
+    width:100%;
+  }
+
+  .ci_intro{
+    /*margin-right: 1000px;*/
+  }
+  .header_m{
+    display: none;
+  }
+}
+@media all and (max-width:1280px) {
+  .header{
+
+    transition: transform 0.5s;
+  }
+  .header_nav{
+    font-size: 70%;
+  }
+  .header_logo{
+    width: 16%;
+  }
+  .header_m{
+    display: none;
+  }
+}
+@media all and (max-width:1180px) {
+  .header{
+    transition: transform 0.5s;
+    position:relative;
+  }
+  .header_nav{
+    font-size: 70%;
+    clear:both;
+  }
+  .header_logo{
+    display: none;
+    width: 20%;
+  }
+  .content_intro{
+    width:95%;
+  }
+  .nav{
+    text-align : center;
+  }
+}
+@media all and (max-width:800px) {
+  footer{
+    display: none;
+  }
+}
+
+
+@media all and (max-width:981px) {
+  .header_m{
+    display: block;
+  }
+  .header{
+    display: none;
+  }
+  .not{
+    display: block;
+  }
+}
+@media all and (max-width:808px) {
+  .header_m{
+    font-size: 80%;
+  }
+}
+@media all and (max-width:700px) {
+  .header_m{
+    font-size: 70%;
+  }
+}
+@media all and (max-width:600px) {
+  .header_m{
+    font-size: 60%;
+  }
+}
+/*
+@media(max-width:1330px){
+  .header{
+    /*display:none;
     transition: transform 0.5s;
   }
   .header_nav{
@@ -42,7 +141,7 @@ a {
 }
 @media(max-width:1100px){
   .header{
-    /*display:none;*/
+    /*display:none;
     transition: transform 0.5s;
   }
   .header_nav{
@@ -54,7 +153,7 @@ a {
 }
 @media(max-width:950px){
   .header{
-    /*display:none;*/
+    /*display:none;
     transition: transform 0.5s;
     position:relative;
   }
@@ -62,7 +161,7 @@ a {
     font-size: 60%;
     clear:both;
     /*height:240px;*/
-    /*position:relative;*/
+    /*position:relative;
     text-align: center;
   }
   .header_logo{
@@ -70,7 +169,7 @@ a {
     width: 20%;
   }
 }
-
+*/
 .content_intro{
   position: static;
 }
