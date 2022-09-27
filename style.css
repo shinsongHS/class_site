@@ -41,6 +41,9 @@ a {
   html{
     width:100%;
   }
+  .footer_{
+    display: none;
+  }
 }
 @media all and (max-width:1500px) {
   .header{
@@ -124,7 +127,10 @@ a {
     display: block;
   }
   footer{
-    transform : translateY(1300px);
+    display: none;
+  }
+  .footer_{
+    display: block;
   }
 }
 @media all and (max-width:808px) {
@@ -295,6 +301,19 @@ footer {
   color : white;
   clear: left;
   height: 170px;
+  position : relative;
+  transform : translateY(100%);
+  /*margin-top: -100px;*/
+  clear:both;
+}
+.footer_ {
+	width: 100%;
+	bottom: 0px;
+  left: 0;
+  background-color: #23272a;
+  color : white;
+  clear: left;
+  height: 3%;
   position : relative;
   transform : translateY(100%);
   /*margin-top: -100px;*/
