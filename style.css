@@ -62,9 +62,9 @@ a {
   }
 }
 @media all and (max-width:1366px){
-    /*footer{
+    footer{
       transform : translateY(1300px);
-    }*/
+    }
 }
 @media all and (max-width:1280px) {
   .header{
@@ -285,8 +285,8 @@ footer {
   clear: left;
   height: 170px;
   position : relative;
-  /*transform : translateY(-100%);*/
-  margin-top: -100px;
+  transform : translateY(-100%);
+  /*margin-top: -100px;*/
 }
 html, body {
       margin: 0;
@@ -294,6 +294,9 @@ html, body {
       height: 185%;   /*교체*/
       min-height: 100%;
       width: 100%;
+}
+body{
+  margin-bottom: 200px;
 }
 section {
   min-height: 100%;
