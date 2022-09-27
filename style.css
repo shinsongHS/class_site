@@ -38,6 +38,9 @@ a {
   footer{
 
   }
+  html{
+    width:100%;
+  }
 }
 @media all and (max-width:1500px) {
   .header{
@@ -104,6 +107,9 @@ a {
   footer{
     display: none;
   }
+  .content_intro{
+    margin-bottom: 300px;
+  }
 }
 
 
@@ -117,7 +123,9 @@ a {
   .not{
     display: block;
   }
-
+  footer{
+    transform : translateY(1300px);
+  }
 }
 @media all and (max-width:808px) {
   .header_m{
@@ -132,6 +140,9 @@ a {
 @media all and (max-width:600px) {
   .header_m{
     font-size: 60%;
+  }
+  .content_intro{
+    margin-bottom: 500px;
   }
 }
 /*
