@@ -43,12 +43,42 @@
 				<hr>
 				</div>
 			</div>
+
+
+      <div class="header_m" style="margin-left:10%;">
+				<div calss="nav" style="line-height: 400%;">
+					<font face="비트로 코어 TTF">
+					<div class="header_nav">
+					<div class="ci" style="float:left;">
+						<a style="font-size:180%" href="class_info.html">학급정보</a>
+					</div>
+					<div class="ti" style="float:left; margin-left:10%;">
+						<a style="font-size:180%" href="test_info.html">시험정보</a>
+					</div>
+					<div style="float:left; margin-left:10%;">
+						<a style="font-size:180%" href="notice.html">공지사항</a>
+					</div>
+					<div style="float:left; margin-left:10%;">
+						<a style="font-size:180%" href="gallery.html">갤러리</a>
+					</div>
+					<div style="float:left; margin-left:10%;">
+						<a style="font-size:180%" href="update_info.html">업데이트 정보</a>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				</font>
+				</div>
+				</div>
+			<div class="not" style="clear:both;">
+				<hr>
+				</div>
+
   </head>
   <body>
 <br><br>
 
 <center>
-<div class="tab_content">
+<div class="tab_content" style="height:100%;">
   <input type="radio" name="tabmenu" id="tab01" checked>
   <label for="tab01">학급 구성원</label>
   <input type="radio" name="tabmenu" id="tab02">
@@ -60,20 +90,63 @@
 <hr width="70%" height="3px" align="center" style="height:2px; border:0; background: #000;">
 
 
-  <div class="conbox con1">
+  <div class="conbox con1" style="width:100%">
     <p>담임선생님: 박유선 선생님</p>
     <p>반장: 정현채</p>
     <p>부반장: 임현성</p>
   </div>
-  <div class="conbox con2">
-    <img src="timetable.png" style="height: 1000px;">
+  <div class="conbox con2" style="width:100%">
+    <img src="timetable.png" style="height: 100%;">
   </div>
-  <div class="conbox con3">
+  <div class="conbox con3" style="width:100%">
     <p>1인1역</p>
     <img src="chall.jpg" style="height: 800px;">
   </div>
+  </center>
+
+
+  <div class="footer">
+    <script>
+    function fn_footer_link(strUrl){
+      document.location.href=strUrl;
+    }
+    </script>
+      <nav>
+        <div calss="nav" style="margin-left:30%; line-height: 400%; font-size: 13px;">
+          <font face="나눔고딕OTF">
+          <div class="header_nav">
+          <div style="float:left;">
+            <div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('class_info.html')">학급정보</div>
+          </div>
+          <div style="margin-left:8%; float:left;">
+            <div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('test_info.html')">시험정보</div>
+          </div>
+          <div style="margin-left:8%; float:left;">
+            <div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('notice.html')">공지사항</div>
+          </div>
+          <div style="margin-left:8%; margin-right:8%; float:left;">
+            <div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('gallery.html')">갤러리</div>
+          </div>
+          <div style="float:left;">
+            <div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('update_info.html')">업데이트 정보</div>
+          </div>
+        </div>
+        </font>
+        </div>
+      </nav>
+      <div style="clear:both;">
+      <p style="font-size:15px;">
+          <span>제작자 : 이정윤</span><br/>
+          <span>이메일 : ijeongyun70@gmail.com</span><br/>
+          <span>version 1.8.14</span><br/>
+          <span>Copyright 2022. 이정윤. All Rights Reserved.</span>
+      </p>
+    </div>
+  </div>
+
+
 </div>
-</center>
+
 
 <style>
   input[type="radio"] {display: none;}
@@ -89,44 +162,7 @@
 
 
 
-    <footer>
-    	<script>
-    	function fn_footer_link(strUrl){
-    		document.location.href=strUrl;
-    	}
-    	</script>
-        <nav>
-    			<div calss="nav" style="margin-left:30%; line-height: 400%; font-size: 13px;">
-    				<font face="나눔고딕OTF">
-    				<div class="header_nav">
-    				<div style="float:left;">
-    					<div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('class_info.html')">학급정보</div>
-    				</div>
-    				<div style="margin-left:8%; float:left;">
-    					<div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('test_info.html')">시험정보</div>
-    				</div>
-    				<div style="margin-left:8%; float:left;">
-    					<div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('notice.html')">공지사항</div>
-    				</div>
-    				<div style="margin-left:8%; margin-right:8%; float:left;">
-    					<div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('gallery.html')">갤러리</div>
-    				</div>
-    				<div style="float:left;">
-    					<div class="footer_link" style="font-size:180%; cursor:pointer;" onclick="fn_footer_link('update_info.html')">업데이트 정보</div>
-    				</div>
-    			</div>
-    			</font>
-    			</div>
-        </nav>
-    		<div style="clear:both;">
-        <p style="font-size:15px;">
-            <span>제작자 : 이정윤</span><br/>
-            <span>이메일 : ijeongyun70@gmail.com</span><br/>
-            <span>version 1.8.0</span><br/>
-    				<span>Copyright 2022. 이정윤. All Rights Reserved.</span>
-        </p>
-    	</div>
-    </footer>
+
 
   </body>
 </html>
