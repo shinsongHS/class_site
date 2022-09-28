@@ -35,15 +35,6 @@ a {
   .not{
     display: none;
   }
-  footer{
-
-  }
-  html{
-    width:100%;
-  }
-  /*.footer_{
-    display: none;
-  }*/
 }
 @media all and (max-width:1500px) {
   .header{
@@ -68,9 +59,7 @@ a {
   }
 }
 @media all and (max-width:1366px){
-    footer{
-      transform : translateY(1300px);
-    }
+    transform : translateY(1300px);
 }
 @media all and (max-width:1280px) {
   .header{
@@ -110,9 +99,6 @@ a {
   footer{
     display: none;
   }
-  .content_intro{
-    margin-bottom: 300px;
-  }
 }
 
 
@@ -126,12 +112,7 @@ a {
   .not{
     display: block;
   }
-  /*footer{
-    display: none;
-  }*/
-  /*.footer_{
-    display: block;
-  }*/
+  
 }
 @media all and (max-width:808px) {
   .header_m{
@@ -146,15 +127,6 @@ a {
 @media all and (max-width:600px) {
   .header_m{
     font-size: 60%;
-  }
-  .content_intro{
-    margin-bottom: 500px;
-  }
-}
-
-@media all and (max-height:875px) {
-  footer{
-    display: none;
   }
 }
 /*
@@ -203,7 +175,6 @@ a {
 */
 .content_intro{
   position: static;
-  padding-bottom: 60px;
 }
 
 /* Slideshow container */
@@ -299,29 +270,21 @@ a {
 min-height: 100%;
 padding-bottom: 150px;
 }
-footer {
-	width: 100%;
+.footer {
+	width: 105%;
 	bottom: 0px;
-  left: 0;
   background-color: #23272a;
   color : white;
   clear: left;
   height: 170px;
-  position : absolute;
-  transform : translateY(2500px);
-  margin-top: -100px;
-  clear:both;
+  position : relative;
+  transform : translateY(1200px);
 }
-
 html, body {
       margin: 0;
       padding: 0;
-      height: 100%;   /*교체*/
-      min-height: 100%;
-      width: 100%;
-}
-body{
-  margin-bottom: 200px;
+ overflow-x: hidden;
+      height: 185%;   /*교체*/
 }
 section {
   min-height: 100%;
