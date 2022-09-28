@@ -12,12 +12,7 @@ a {
  }
  a:visited {text-decoration: none; color: black;}
 
-@media(max-width:800px){
-  .header{
-    display:none;
-    transition: transform 0.5s;
-  }
-}
+
 
 
 #wrap {
@@ -25,22 +20,135 @@ a {
 min-height: 100%;
 padding-bottom: 150px;
 }
-footer {
-	width: 100%;
+.footer {
+  width: 105%;
 	bottom: 0px;
   background-color: #23272a;
   color : white;
   clear: left;
-  height: 170px;
+  height: 150px;
   position : relative;
-  transform : translateY(250%);
+  transform : translateY(1200px);
 }
 html, body {
       margin: 0;
       padding: 0;
       height: 100%;   /*교체*/
+      overflow-x: hidden;
 }
 section {
   min-height: 100%;
     position: relative;
+}
+
+
+@media all and (max-width:15000px) {
+  .header_m{
+    display: none;
+  }
+  .not{
+    display: none;
+  }
+}
+@media all and (max-width:1500px) {
+  .header{
+    /*display:none;*/
+    transition: transform 0.5s;
+  }
+  .header_nav{
+    font-size: 80%;
+  }
+  .header_logo{
+    width: 15%;
+  }
+  .content_intro{
+    width:100%;
+  }
+
+  .ci_intro{
+    /*margin-right: 1000px;*/
+  }
+  .header_m{
+    display: none;
+  }
+}
+@media all and (max-width:1366px){
+    transform : translateY(1300px);
+}
+@media all and (max-width:1280px) {
+  .header{
+    transition: transform 0.5s;
+  }
+  .header_nav{
+    font-size: 70%;
+  }
+  .header_logo{
+    width: 16%;
+  }
+  .header_m{
+    display: none;
+  }
+}
+@media all and (max-width:1100px) {
+  .header{
+    transition: transform 0.5s;
+    position:relative;
+  }
+  .header_nav{
+    font-size: 70%;
+    clear:both;
+  }
+  .header_logo{
+    display: none;
+    width: 20%;
+  }
+  .content_intro{
+    width:95%;
+  }
+  .nav{
+    text-align : center;
+  }
+  .header_m{
+    display: block;
+  }
+  .header{
+    display: none;
+  }
+  .not{
+    display: block;
+  }
+}
+@media all and (max-width:674px) {
+  .footer{
+    height: 200px;
+  }
+}
+@media all and (max-width:317px) {
+  .footer{
+    height: 300px;
+  }
+}
+@media all and (max-width:210px) {
+  .footer{
+    display: none;
+  }
+}
+
+@media all and (max-width:981px) {
+
+}
+@media all and (max-width:808px) {
+  .header_m{
+    font-size: 80%;
+  }
+}
+@media all and (max-width:700px) {
+  .header_m{
+    font-size: 70%;
+  }
+}
+@media all and (max-width:600px) {
+  .header_m{
+    font-size: 60%;
+  }
 }
