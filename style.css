@@ -1,6 +1,6 @@
 @font-face{
- font-family:"비트로 코어 TTF"; 
- src:url("비트로 코어 TTF.ttf") format("truetype"); 
+ font-family:"비트로 코어 TTF";
+ src:url("비트로 코어 TTF.ttf") format("truetype");
  }
 img {
    image-rendering: -webkit-optimize-contrast;
@@ -129,7 +129,7 @@ html, body {
       padding: 0;
  overflow-x: hidden;
       height: 100%;   /*교체*/
-      
+
 }
 .nav{
     font-family:'비트로 코어 TTF';

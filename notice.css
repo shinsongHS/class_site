@@ -147,7 +147,10 @@ a {
 
 
 
-
+@font-face{
+ font-family:"비트로 코어 TTF";
+ src:url("비트로 코어 TTF.ttf") format("truetype");
+ }
 img {
    image-rendering: -webkit-optimize-contrast;
    transform: translateZ(0);
@@ -192,7 +195,9 @@ html, body {
       height: 100%;   /*교체*/
 			overflow-x: hidden;
 }
-
+.nav{
+    font-family:'비트로 코어 TTF';
+}
 section {
   min-height: 100%;
     position: relative;
