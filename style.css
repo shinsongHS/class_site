@@ -1,6 +1,8 @@
 @font-face{
  font-family:"비트로 코어 TTF";
  src:url("비트로 코어 TTF.ttf") format("truetype");
+ font-family:"달서 힐링체 미디움";
+ src:url("달서 힐링체 미디움.ttf") format("truetype");
  }
 img {
    image-rendering: -webkit-optimize-contrast;
@@ -19,6 +21,7 @@ a {
 
 .content_intro{
   position: static;
+  font-family: '달서 힐링체 미디움';
 }
 
 /* Slideshow container */
@@ -123,6 +126,7 @@ padding-bottom: 150px;
   height: 60%;
   position : relative;
   transform : translateY(1200px);
+  font-family: '달서 힐링체 미디움';
 }
 html, body {
       margin: 0;

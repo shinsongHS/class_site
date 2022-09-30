@@ -1,7 +1,94 @@
-/** {
-	margin: 0;
-	padding: 0;
-}*/
+button{
+  background:#23272a;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#23272a;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+/*--------------------------------------------------------------------------------*/
+
+@font-face{
+ font-family:"비트로 코어 TTF";
+ src:url("비트로 코어 TTF.ttf") format("truetype");
+ font-family:"달서 힐링체 미디움";
+ src:url("달서 힐링체 미디움.ttf") format("truetype");
+ }
+img {
+   image-rendering: -webkit-optimize-contrast;
+   transform: translateZ(0);
+   backface-visibility: hidden;
+ }
+.upheader{
+  color: gray;
+  font-size: small;
+}
+a {
+   text-decoration:none;
+ }
+ a:visited {text-decoration: none; color: black;}
+
+
+/*--------------------------------------------------------------------------------*/
+
+.member {
+    width: 800%;
+    background-color: #fff;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+}
+.member caption {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.member tr:nth-child(odd) {
+    background-color: #ddd;
+}
+.member th,
+.member td {
+    padding: 12px;
+    text-align: center;
+}
+.member tr th {
+    background-color: dodgerblue;
+    color: #fff;
+}
+.member tr th:last-child {
+    border-radius: 0 5px 0 0;
+}
+
+/*--------------------------------------------------------------------------------*/
+
 div.a{
 
 }
@@ -39,7 +126,7 @@ a {
 	margin-left: 10px;
 	border: 1px solid #000;
 	border-radius: 2px;
-	font-size: 1rem;
+	font-size: 1.4rem;
 }
 .bt_wrap a:first-child {
 	margin-left: 0;
@@ -94,7 +181,7 @@ a {
 .board_view .title {
 	padding: 20px 15px;
 	border-bottom: 1px dashed #ddd;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 .board_view .info {
 	padding: 15px;
@@ -126,11 +213,11 @@ a {
 
 .board_view .info dl dt {
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.4rem;
 }
 .board_view .info dl dd {
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	margin-left: 10px;
     color: #777;
 }
@@ -139,62 +226,41 @@ a {
 	padding : 15px;
 	border-bottom:1px solid #000;
 	line-height: 160%;
-	font-size: 1rem;
+	font-size: 1.4rem;
 }
 
 
 
 
-
-
-
-img {
-   image-rendering: -webkit-optimize-contrast;
-   transform: translateZ(0);
-   backface-visibility: hidden;
- }
-.upheader{
-  color: gray;
-  font-size: small;
-}
-a {
-   text-decoration:none;
- }
- a:visited {text-decoration: none; color: black;}
-
-
-
-
+/*--------------------------------------------------------------------------------*/
 #wrap {
   height: auto;
 min-height: 100%;
 padding-bottom: 150px;
 }
 .footer {
-	width: 105%;
+  width: 105%;
 	bottom: 0px;
   background-color: #23272a;
   color : white;
   clear: left;
-  height: 60%;
+  height: 150px;
   position : relative;
   transform : translateY(1200px);
 }
-
 html, body {
       margin: 0;
       padding: 0;
-      height: 50%;   /*교체*/
+      height: 100%;   /*교체*/
+      overflow-x: hidden;
 }
-
+.nav{
+    font-family:'비트로 코어 TTF';
+}
 section {
   min-height: 100%;
     position: relative;
 }
-
-
-
-
 @media all and (max-width:15000px) {
   .header_m{
     display: none;

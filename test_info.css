@@ -39,6 +39,8 @@ button:hover:before,button:hover:after{
 @font-face{
  font-family:"비트로 코어 TTF";
  src:url("비트로 코어 TTF.ttf") format("truetype");
+ font-family:"달서 힐링체 미디움";
+ src:url("달서 힐링체 미디움.ttf") format("truetype");
  }
 img {
    image-rendering: -webkit-optimize-contrast;
