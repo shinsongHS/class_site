@@ -161,11 +161,11 @@ a {
 .board_list .num {
 	width: 10%;
 }
-.board_list .title {
+.board_list .titlee {
 	width: 60%;
 	text-align: left;
 }
-.board_list .top .title {
+.board_list .top .titlee {
 	text-align: center;
 }
 .board_list .writer {
@@ -178,7 +178,7 @@ a {
 	width: 100%;
 	border-top: 2px solid #000;
 }
-.board_view .title {
+.board_view .titlee {
 	padding: 20px 15px;
 	border-bottom: 1px dashed #ddd;
 	font-size: 2rem;
@@ -353,10 +353,19 @@ section {
   }
 }
 
-@media all and (max-width:981px) {
-
+@media all and (max-width:800px) {
+  .ev{
+    font-size: 0.5vw;
+  }
+  .dv{
+    font-size: 2.3vw;
+    white-space: nowrap;
+  }
+  .cv{
+    font-size: 4vw;
+  }
 }
-@media all and (max-width:808px) {
+@media all and (max-width:810px) {
   .header_m{
     font-size: 80%;
   }
